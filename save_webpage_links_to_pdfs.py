@@ -25,7 +25,8 @@ def save_links_on_webpage_to_multiple_pdfs(url, path_wkhtmltopdf, output_folder,
     links_list = link_re.findall(html_file_contents)
 
     unique_links = list(set(links_list))
-    final_links_list = [urljoin(url, x) for x in unique_links if link_criteria in x]
+    final_links_list: list = [urljoin(url, x) for x in unique_links if link_criteria in x]
+    final_links_list.append(url)
     print(final_links_list)
 
     for link in final_links_list:
