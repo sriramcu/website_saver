@@ -1,4 +1,4 @@
-# Webpage to PDF Converter
+# Nested Webpages to multiple PDFs Converter
 
 Have you ever wanted to save a website as a PDF to refer to offline, like on a flight 
 or in the subway? Maybe you tried Control+P, but then you noticed that each page has a 
@@ -32,7 +32,7 @@ saving potentially lengthy bibliography links taken from outside wikipedia.
    2. DEFAULT_CRITERIA: default criteria to filter links (**optional**- filters links 
       containing this string, can also be specified with -c flag)
    3. WKHTMLTOPDF_PATH: path to wkhtmltopdf executable (**required**)
-4. Run the program: `python webpage_to_pdf.py [-u URL] [-c CRITERIA] [-o OUTPUT_FOLDER]`
+4. Run the program: `python save_webpage_links_to_pdfs.py [-u URL] [-c CRITERIA] [-o OUTPUT_FOLDER]`
    
 ## Command Line Arguments
    * -u, --url: URL to save as PDF (default: DEFAULT_URL environment variable)
@@ -42,7 +42,8 @@ saving potentially lengthy bibliography links taken from outside wikipedia.
 
 ## Example
 
-`python webpage_to_pdf.py -u https://docs.python.org/3/library/urllib.parse.html -c 
+`python save_webpage_links_to_pdfs.py -u https://docs.python.org/3/library/urllib.parse.
+html -c 
 parse -o url_lib_pdfs`
 
 Above command will save all the links containing the string "parse" in the URL as 
