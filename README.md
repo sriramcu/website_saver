@@ -1,4 +1,4 @@
-# Nested Webpages to multiple PDFs Converter
+# Save Linked Web Pages to separate PDFs
 
 Have you ever wanted to save a website as a PDF to refer to offline, like on a flight 
 or in the subway? Maybe you tried Control+P, but then you noticed that each page has a 
